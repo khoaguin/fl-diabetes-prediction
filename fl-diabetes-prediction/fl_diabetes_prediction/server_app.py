@@ -2,7 +2,6 @@
 
 from flwr.common import ndarrays_to_parameters
 from flwr.server import ServerApp, ServerConfig, ServerAppComponents
-from flwr.server.strategy import FedAvg
 from flwr.common import Context
 
 from fl_diabetes_prediction.task import Net, get_weights

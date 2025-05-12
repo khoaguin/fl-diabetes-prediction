@@ -5,14 +5,10 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import TensorDataset, DataLoader
-import numpy as np
-import matplotlib.pyplot as plt
-from safetensors.torch import save_file, load_file
 from flwr_datasets import FederatedDataset
 from sklearn.model_selection import train_test_split
 from flwr_datasets.partitioner import IidPartitioner
 from sklearn.model_selection import train_test_split
-import imblearn
 from imblearn.over_sampling import SMOTE
 from sklearn.preprocessing import StandardScaler
 

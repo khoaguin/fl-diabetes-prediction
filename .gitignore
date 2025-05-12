@@ -3,3 +3,4 @@
 dataset/
 **/simulation_logs/*
 **/__pycache__/*
+weights/
