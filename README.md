@@ -1,3 +1,10 @@
+# Diabetes Prediction with `syft_flwr`
+
+Diabetes prediction using [syft_flwr](https://github.com/OpenMined/syft-flwr)
+
+Dataset: https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database/
+
+
 ## Data Scientist
 
 ```bash
