@@ -34,8 +34,8 @@ Run the `ds.ipynb`
 
 ## References
 - https://github.com/elarsiad/diabetes-prediction-keras
-- syftbox.openmined.org
-- syftboxdev.openmined.org
+- https://syftbox.openmined.org
+- https://syftboxdev.openmined.org
 - https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database/
 - https://github.com/OpenMined/syftbox
 - https://github.com/OpenMined/syft-flwr
