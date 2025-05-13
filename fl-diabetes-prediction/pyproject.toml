@@ -13,12 +13,12 @@ dependencies = [
     "flwr[simulation]==1.17.0",
     "flwr-datasets>=0.5.0",
     "torch==2.7.0",
-    "syft_flwr==0.1.0",
     "imblearn",
     "pandas",
     "scikit-learn==1.6.1",
     "loguru",
-    "jupyter"
+    "jupyter",
+    "syft_flwr==0.1.0",
 ]
 
 [tool.hatch.build.targets.wheel]
@@ -44,12 +44,3 @@ default = "local-simulation"
 [tool.flwr.federations.local-simulation.options]
 num-supernodes = 5
 
-[tool.syft_flwr]
-datasites = [
-    "do1@openmined.org",
-    "do2@openmined.org",
-    "do3@openmined.org",
-    "do4@openmined.org",
-    "do5@openmined.org",
-]
-aggregator = "khoa@openmined.org"
