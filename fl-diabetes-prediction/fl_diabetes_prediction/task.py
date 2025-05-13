@@ -18,14 +18,6 @@ def get_device():
         return torch.device("cuda")
     elif torch.backends.mps.is_available():
         return torch.device("mps")
-    elif torch.backends.xla.is_available():
-        return torch.device("xla")
-    elif torch.backends.xpu.is_available():
-        return torch.device("xpu")
-    elif torch.backends.ipu.is_available():
-        return torch.device("ipu")
-    elif torch.backends.meta.is_available():
-        return torch.device("meta")
     else:
         return torch.device("cpu")
 
