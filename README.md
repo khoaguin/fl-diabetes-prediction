@@ -40,3 +40,4 @@ Run the `ds.ipynb`
 - https://github.com/OpenMined/syftbox
 - https://github.com/OpenMined/syft-flwr
 - https://github.com/OpenMined/rds
+- https://github.com/adap/flower/tree/main/examples/fl-tabular
