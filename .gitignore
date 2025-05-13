@@ -1,6 +1,5 @@
 .DS_Store
 .venv
-dataset/
 **/simulation_logs/*
 **/__pycache__/*
 weights/
