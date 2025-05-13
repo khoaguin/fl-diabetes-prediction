@@ -23,6 +23,7 @@ def server_fn(context: Context) -> ServerAppComponents:
 
     strategy = FedAvgWithModelSaving(
         save_path=Path(__file__).parent.parent.parent / "weights",
+        fraction_fit=1.0,
         fraction_evaluate=1.0,
         min_available_clients=2,
         initial_parameters=params,
