@@ -1,8 +1,7 @@
 """fltabular: Flower Example on Adult Census Income Tabular Dataset."""
 
-from flwr.common import ndarrays_to_parameters
-from flwr.server import ServerApp, ServerConfig, ServerAppComponents
-from flwr.common import Context
+from flwr.common import Context, ndarrays_to_parameters
+from flwr.server import ServerApp, ServerAppComponents, ServerConfig
 
 from fl_diabetes_prediction.task import Net, get_weights
 
@@ -19,6 +18,7 @@ def server_fn(context: Context) -> ServerAppComponents:
     params = ndarrays_to_parameters(get_weights(net))
 
     from pathlib import Path
+
     from syft_flwr.strategy import FedAvgWithModelSaving
 
     strategy = FedAvgWithModelSaving(

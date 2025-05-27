@@ -1,6 +1,0 @@
-.DS_Store
-.venv
-**/simulation_logs/*
-**/__pycache__/*
-weights/
-fl-diabetes-prediction/uv.lock

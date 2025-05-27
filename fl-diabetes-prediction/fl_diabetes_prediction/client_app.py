@@ -1,7 +1,6 @@
-from loguru import logger
-
 from flwr.client import ClientApp, NumPyClient
 from flwr.common import Context
+from loguru import logger
 
 from fl_diabetes_prediction.task import (
     Net,
@@ -31,14 +30,14 @@ class FlowerClient(NumPyClient):
 
 
 def client_fn(context: Context):
-    from fl_diabetes_prediction.task import load_syftbox_dataset, load_flwr_data
+    from fl_diabetes_prediction.task import load_syftbox_dataset
     from syft_flwr.utils import run_syft_flwr
 
     if not run_syft_flwr():
         logger.info("Running flwr locally")
         train_loader, test_loader = load_flwr_data(
             partition_id=context.node_config["partition-id"],
-            num_partitions=context.node_config["num-partitions"]
+            num_partitions=context.node_config["num-partitions"],
         )
     else:
         logger.info("Running with syft_flwr")
